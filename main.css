@@ -1,0 +1,300 @@
+/* These are the importers that import the fonts used in my site, courtesy of google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Geo:ital@0;1&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Damion&family=Geo:ital@0;1&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Damion&family=Geo:ital@0;1&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+/* Background Setup Styles */
+body {
+    /* This page has the older windows background applied using background image */
+    background-image: url("Windows95-1080p.jpg");
+    min-width: 250px;
+}
+/* This is the inital window faced upon loading the page */
+div.windowsWindow {
+    background-color: rgb(195,195,195);
+    padding-bottom: 20px;
+    /* The borders are styled this way in an imitation of the older windows operating system */
+    border-top: 2px solid rgb(246,245,245);
+    border-left: 2px solid rgb(236,235,235);
+    border-bottom: 2px solid rgb(18,37,37);
+    border-right: 2px solid rgb(18,37,37);
+}
+/* This is the blue bar at the top of the dashboard */
+div.windowsTitle {
+    background-color: rgb(0,0,124);
+    color: white;
+    margin: 1px;
+    padding-left: 2px;
+}
+h1 {
+    text-align: center;
+}
+/* These are used to hide, dim or select elements to make the UI more intuitive */
+.hidden {
+    display: none;
+}
+.unavailable {
+    opacity: 50%;
+}
+.selected {
+    background-color: rgb(43, 102, 81);
+    color: white;
+}
+
+/* Begin window styles */
+div.beginButton {
+    text-align: center;
+}
+.beginWindow {
+    width: 200px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+
+/* 3 phase day display styles */
+span.circle {
+    height: 25px;
+    width: 25px;
+    background-color: lightblue;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 21%;
+}
+/* The icons styled in color, size and given a margin that scales based on the size of the page */
+span.fa-sun {
+    margin-left: 20%;
+    color: #FFD43B;
+    font-size: 30px;
+}
+span.fa-moon {
+    margin-left: 20%;
+    color: rgb(25,25,112);
+    font-size: 30px;
+}
+
+
+/* Window Layout Styles */
+div.windowContent {
+    display: inline-block;
+    width: 45%;
+}
+div.RHS {
+    text-align: right;
+    vertical-align: top;
+    margin-top: 42px;
+}
+
+/* Window Content General Styles */
+/* Heading Styles */
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* General Button Styles */
+button {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid rgb(130, 130, 130);
+    border-right: 1px solid rgb(130, 130, 130);
+}
+button:hover {
+    background-color: rgb(185, 185, 185);
+}
+button.disable {
+    background-color: rgb(185, 185, 185);
+}
+
+/* Break Styles */
+hr {
+    margin-right: 0;
+    width: 200px;
+    color: black;
+    border-style: solid;
+}
+
+/* General LHS (left hand side) styles */
+/* LHS Heading Styles */
+h3.h3LHS {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20%;
+}
+h4 {
+    margin-left: 20%;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.withdrawText {
+    font-size: 15px;
+    margin-left: 25%;
+}
+h3.LHSmarginTop {
+    margin-top: 20px;
+}
+
+/* LHS button styles */
+button.valueChanger {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}
+button.plusButton {
+    margin-left: 28%;
+}
+button.submitButton {
+    margin-left: 25%;
+    width: 70px;
+    height: 25px;
+    background-color: rgb(56, 128, 34);
+    color: white;
+}
+button.submitButton:hover {
+    background-color: rgb(88, 154, 68);
+}
+button.resetButton {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 35%;
+}
+
+/* LHS input styles */
+input {
+    margin-left: 20%;
+    width: 100px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+
+/* Balance variable field styles */
+div.variableField {
+    background-color: antiquewhite;
+    margin-left: 20%;
+    width: 100px;
+    border-top: 1px solid rgb(130, 130, 130);
+    border-left: 1px solid rgb(130, 130, 130);
+}
+h3.fieldVariable {
+    margin-left: 2px;
+}
+span.notEnoughMoney {
+    color: red;
+    font-size: 8px;
+}
+
+/* General RHS Styles */
+/* RHS Heading Styles */
+h3.h3RHS {
+    margin-top: 10px;
+    margin-right: 15%;
+}
+
+/* RHS Button Styles */
+button.RHSbutton {
+    margin-right: 15%;
+    width: 130px;
+}
+
+
+/* Online Store Styles */
+/* General Online Store Styles */
+button.onlineStoreButton {
+    height: 40px;
+    width: 50px;
+    margin-bottom: 3px;
+    vertical-align: top;
+}
+
+/* Eucalyptus Tree */
+button.eucalyptusTree:hover {
+    background-color: rgb(51, 39, 58);
+}
+span.fa-tree {
+    font-size: xx-large;
+    color: rgb(116, 209, 87);
+}
+
+/* EZ Gamez */
+button.EZGames {
+    color: rgb(229, 81, 79);
+    font-family: "Damion";
+    font-size: 20px;
+    margin-right: 15%;
+    font-size: 25px;
+    vertical-align: top;
+}
+button.EZGames:hover {
+    background-color: rgb(37, 89, 191);
+}
+
+/* Faceybook */
+button.faceyBook {
+    color: rgb(45, 101, 246);
+    font-size: xx-large;
+    font-family: "Merriweather Sans", sans-serif;
+}
+button.faceyBook:hover {
+    color: whitesmoke;
+    background-color: rgb(45, 101, 246);
+    font-size: xx-large;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+/* IBAY */
+span.I {
+    color: rgb(212, 72, 70);
+    font-family: "Outfit", sans-serif;
+}
+span.B {
+    color: rgb(48, 103, 205);
+    font-family: "Outfit", sans-serif;
+}
+span.A {
+    color: rgb(236, 180, 67);
+    font-family: "Outfit", sans-serif;
+}
+span.Y {
+    color: rgb(148, 185, 67);
+    font-family: "Outfit", sans-serif;
+}
+
+button.IBAY {
+    font-size: 15px;
+}
+
+/* Physical Store Styles */
+/* Big Camera */
+button.bigCamera {
+    color: rgb(221,32,32);
+    font-family: "Geo", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    vertical-align: top;
+    font-size: 20px;
+    height: 35px;
+}
+button.bigCamera:hover {
+    background-color: rgb(87, 4, 4);
+}
+
+/* Mom & Pop Store */
+button.momAndPop {
+    color: rgb(162, 128, 102);
+    font-family: "Cookie";
+    font-weight: 600;
+    margin-top: 3px;
+    font-size: 15px;
+    height: 35px;
+}
+button.momAndPop:hover {
+    color: rgb(240, 223, 205);
+    background-color: rgb(167, 116, 86);
+}
+
+/* Smaller Text */
+button.shrinkText {
+    font-size: 15px;
+}

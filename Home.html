@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <!-- Linking the stylesheets and titles the html file -->
+        <title>HomePage</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    </head>
+    <body>
+        <!-- Start window -->
+        <div id="startWindow" class="windowsWindow beginWindow">
+            <!-- Heading and begin button -->
+            <h1>Welcome To Windowless  Xtra Perfect</h1>
+            <div class="beginButton"> <!-- This is here to centre the begin button -->
+                <button id="begin">Begin?</button> <!-- This button triggers a lot of setting up -->
+            </div>
+        </div>
+
+        <!-- The dashboard window -->
+        <div id="win95Window" class="windowsWindow hidden">
+            <!-- Window Headings -->
+            <div class="windowsTitle">Dashboard</div>
+            <h1>Dashboard</h1>
+            
+            <!-- 3 phase day display -->
+             <span id="circle1" class="circle fa"></span>
+             <span id="circle2" class="circle fa"></span>
+             <span id="circle3" class="circle fa"></span>
+             <br>
+
+            <!-- LHS of the dashboard -->
+            <div class="windowContent LHS">
+                <div id="controlledByFather">
+                    <!-- Balance info -->
+                    <h3 id="balanceHeading" class="h3LHS h3default LHSmarginTop">Balance:</h3>
+                    <div class="variableField">
+                        <h3 class="h3LHS fieldVariable">$<span id="balance">0</span></h3>
+                    </div>
+                    <!-- Banking money transfer UI -->
+                    <h4 class="LHSmarginTop withdrawText">Withdraw</h4>
+                    <button id="bankDeposit" class="valueChanger plusButton disable">+</button>
+                    <button id="bankWithdraw" class="valueChanger">-</button>
+
+                    <!-- Withdrawal & deposit UI -->
+                    <input id="withdrawInput" type="number" class="hidden">
+                    <input id="depositInput" type="number" class="hidden"><br>
+                    <button id="bankSubmit" class="submitButton hidden"></button>
+
+                    <!-- Loan info -->
+                    <h3 class="h3LHS LHSmarginTop">Loan:</h3>
+                    <div class="variableField">
+                        <h3 class="h3LHS fieldVariable">$<span id="loan">0</span></h3>
+                    </div>
+                    <!-- Loan options -->
+                    <button id="loanIncrease" class="valueChanger plusButton">+</button>
+                    <button id="loanDecrease" class="valueChanger disable">-</button>
+                </div>
+
+                <!-- Cash on hand info -->
+                <h3 class="h3LHS LHSmarginTop">Cash:</h3>
+                <div class="variableField">
+                    <h3 class="h3LHS fieldVariable">$<span id="cash"></span></h3>
+                </div>
+
+            </div>
+
+            <!-- RHS of the dashboard -->
+            <div class="windowContent RHS">
+                <!-- Soul transfer section -->
+                <button id="child" class="childButton">Transfer Soul<br>To Child</button>
+                <button id="father" class="fatherButton">Transfer Soul<br>To Father</button>
+                <!-- Online stores section -->
+                <h3 class="h3RHS">Online Stores</h3>
+                <hr>
+                <!-- Online store buttons -->
+                <button id="eucalyptusTreeButton" class="onlineStoreButton eucalyptusTree" onclick="sendToEucalyptusTree();"><span class="fa fa-tree"></span></button>
+                <button id="EZGamesButton" class="onlineStoreButton EZGames" onclick="sendToEZGames();">EZ</button><br>
+                <button id="faceyBookButton" class="onlineStoreButton faceyBook" onclick="sendToFaceyBook();">f</button>
+                <button id="iBAYButton" class="onlineStoreButton IBAY RHSbutton" onclick="sendToIBAY();"><span class="I">i</span><span class="B">b</span><span class="A">a</span><span class="Y">y</span></button>
+                <!-- Physical stores section -->
+                <h3 class="h3RHS">Physical Stores</h3>
+                <hr>
+                <button id="BigCameraButton" class="RHSbutton bigCamera">Big Camera</button><br>
+                <button id="momAndPopButton" class="RHSbutton momAndPop">Mom & Pop Store</button>
+            </div>
+            <!-- These are debugging tools, I was going to take them out but considering the game is unfinished I kept them in -->
+            <h1>Debug Tools</h1>
+            <button id="resetSession" class="resetButton">RESET SESSION</button> <!-- This button resets all of the variables (refresh is sometimes required)-->
+            <button id="cycleDay" class="dayCycleButton">Cycle Day</button> <!-- This cycles the day, but since a lot of checks are performed from the begin button this is more of a quick and dirty way of forcing time passing or testing elements-->
+        </div>
+        
+        <!-- Link to script -->
+        <script src="script.js"></script>
+    </body>
+</html>
